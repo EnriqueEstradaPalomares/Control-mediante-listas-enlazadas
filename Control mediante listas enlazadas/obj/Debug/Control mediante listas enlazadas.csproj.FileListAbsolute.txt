@@ -1,0 +1,10 @@
+c:\users\joséenrique\source\repos\Control mediante listas enlazadas\Control mediante listas enlazadas\obj\Debug\Control mediante listas enlazadas.csprojResolveAssemblyReference.cache
+c:\users\joséenrique\source\repos\Control mediante listas enlazadas\Control mediante listas enlazadas\obj\Debug\Control_mediante_listas_enlazadas.Form1.resources
+c:\users\joséenrique\source\repos\Control mediante listas enlazadas\Control mediante listas enlazadas\obj\Debug\Control_mediante_listas_enlazadas.Properties.Resources.resources
+c:\users\joséenrique\source\repos\Control mediante listas enlazadas\Control mediante listas enlazadas\obj\Debug\Control mediante listas enlazadas.csproj.GenerateResource.Cache
+c:\users\joséenrique\source\repos\Control mediante listas enlazadas\Control mediante listas enlazadas\obj\Debug\Control mediante listas enlazadas.csproj.CoreCompileInputs.cache
+c:\users\joséenrique\source\repos\Control mediante listas enlazadas\Control mediante listas enlazadas\bin\Debug\Control mediante listas enlazadas.exe.config
+c:\users\joséenrique\source\repos\Control mediante listas enlazadas\Control mediante listas enlazadas\bin\Debug\Control mediante listas enlazadas.exe
+c:\users\joséenrique\source\repos\Control mediante listas enlazadas\Control mediante listas enlazadas\bin\Debug\Control mediante listas enlazadas.pdb
+c:\users\joséenrique\source\repos\Control mediante listas enlazadas\Control mediante listas enlazadas\obj\Debug\Control mediante listas enlazadas.exe
+c:\users\joséenrique\source\repos\Control mediante listas enlazadas\Control mediante listas enlazadas\obj\Debug\Control mediante listas enlazadas.pdb
