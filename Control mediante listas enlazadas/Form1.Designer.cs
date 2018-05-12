@@ -45,13 +45,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnAgrInicio = new System.Windows.Forms.Button();
+            this.btnElimiPrimero = new System.Windows.Forms.Button();
+            this.btnElimiUltimo = new System.Windows.Forms.Button();
+            this.btnReporte = new System.Windows.Forms.Button();
+            this.btnInverVista = new System.Windows.Forms.Button();
+            this.btnInsertar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(373, 76);
+            this.label6.Location = new System.Drawing.Point(384, 58);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 18);
             this.label6.TabIndex = 35;
@@ -59,7 +65,7 @@
             // 
             // txtPos
             // 
-            this.txtPos.Location = new System.Drawing.Point(364, 97);
+            this.txtPos.Location = new System.Drawing.Point(375, 79);
             this.txtPos.Name = "txtPos";
             this.txtPos.Size = new System.Drawing.Size(85, 20);
             this.txtPos.TabIndex = 34;
@@ -82,6 +88,7 @@
             this.btnEliminar.TabIndex = 32;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnBuscar
             // 
@@ -91,6 +98,7 @@
             this.btnBuscar.TabIndex = 31;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnAgregar
             // 
@@ -104,11 +112,11 @@
             // 
             // txtLista
             // 
-            this.txtLista.Location = new System.Drawing.Point(14, 191);
+            this.txtLista.Location = new System.Drawing.Point(14, 228);
             this.txtLista.Multiline = true;
             this.txtLista.Name = "txtLista";
             this.txtLista.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtLista.Size = new System.Drawing.Size(435, 81);
+            this.txtLista.Size = new System.Drawing.Size(465, 197);
             this.txtLista.TabIndex = 29;
             // 
             // txtCosto
@@ -196,11 +204,73 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "Codigo";
             // 
+            // btnAgrInicio
+            // 
+            this.btnAgrInicio.Location = new System.Drawing.Point(9, 185);
+            this.btnAgrInicio.Name = "btnAgrInicio";
+            this.btnAgrInicio.Size = new System.Drawing.Size(90, 23);
+            this.btnAgrInicio.TabIndex = 36;
+            this.btnAgrInicio.Text = "Agregar Inicio";
+            this.btnAgrInicio.UseVisualStyleBackColor = true;
+            this.btnAgrInicio.Click += new System.EventHandler(this.btnAgrInicio_Click);
+            // 
+            // btnElimiPrimero
+            // 
+            this.btnElimiPrimero.Location = new System.Drawing.Point(105, 185);
+            this.btnElimiPrimero.Name = "btnElimiPrimero";
+            this.btnElimiPrimero.Size = new System.Drawing.Size(90, 23);
+            this.btnElimiPrimero.TabIndex = 37;
+            this.btnElimiPrimero.Text = "Eliminar Primero";
+            this.btnElimiPrimero.UseVisualStyleBackColor = true;
+            // 
+            // btnElimiUltimo
+            // 
+            this.btnElimiUltimo.Location = new System.Drawing.Point(201, 185);
+            this.btnElimiUltimo.Name = "btnElimiUltimo";
+            this.btnElimiUltimo.Size = new System.Drawing.Size(90, 23);
+            this.btnElimiUltimo.TabIndex = 38;
+            this.btnElimiUltimo.Text = "Eliminar Ultimo";
+            this.btnElimiUltimo.UseVisualStyleBackColor = true;
+            // 
+            // btnReporte
+            // 
+            this.btnReporte.Location = new System.Drawing.Point(297, 185);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(90, 37);
+            this.btnReporte.TabIndex = 39;
+            this.btnReporte.Text = "Reporte Inverso";
+            this.btnReporte.UseVisualStyleBackColor = true;
+            // 
+            // btnInverVista
+            // 
+            this.btnInverVista.Location = new System.Drawing.Point(393, 185);
+            this.btnInverVista.Name = "btnInverVista";
+            this.btnInverVista.Size = new System.Drawing.Size(90, 23);
+            this.btnInverVista.TabIndex = 40;
+            this.btnInverVista.Text = "Invertir vista";
+            this.btnInverVista.UseVisualStyleBackColor = true;
+            // 
+            // btnInsertar
+            // 
+            this.btnInsertar.Location = new System.Drawing.Point(247, 147);
+            this.btnInsertar.Name = "btnInsertar";
+            this.btnInsertar.Size = new System.Drawing.Size(75, 23);
+            this.btnInsertar.TabIndex = 41;
+            this.btnInsertar.Text = "Insertar";
+            this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 282);
+            this.ClientSize = new System.Drawing.Size(491, 437);
+            this.Controls.Add(this.btnInsertar);
+            this.Controls.Add(this.btnInverVista);
+            this.Controls.Add(this.btnReporte);
+            this.Controls.Add(this.btnElimiUltimo);
+            this.Controls.Add(this.btnElimiPrimero);
+            this.Controls.Add(this.btnAgrInicio);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtPos);
             this.Controls.Add(this.btnListar);
@@ -244,6 +314,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnAgrInicio;
+        private System.Windows.Forms.Button btnElimiPrimero;
+        private System.Windows.Forms.Button btnElimiUltimo;
+        private System.Windows.Forms.Button btnReporte;
+        private System.Windows.Forms.Button btnInverVista;
+        private System.Windows.Forms.Button btnInsertar;
     }
 }
 

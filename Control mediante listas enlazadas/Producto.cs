@@ -8,11 +8,11 @@ namespace Control_mediante_listas_enlazadas
 {
     class Producto
     {
-        private int _codigo { get; set; }
-        private string _nombre { get; set; }
-        private string _descripcion { get; set; }
-        private string _cantidad { get; set; }
-        private string _costo { get; set; }
+        private int _codigo;
+        private string _nombre;
+        private string _descripcion;
+        private string _cantidad;
+        private string _costo;
 
         private Producto _sig;
 
@@ -24,6 +24,30 @@ namespace Control_mediante_listas_enlazadas
             this._cantidad = cantidad;
             this._costo = costo;
         }
+        public int Codigo
+        {
+            get { return _codigo; }
+        }
+
+        public string Nombre
+        {
+            get { return _nombre; }
+        }
+
+        public string Descripcion
+        {
+            get { return _descripcion; }
+        }
+
+        public string Cantidad
+        {
+            get { return _cantidad; }
+        }
+
+        public string Costo
+        {
+            get { return _costo; }
+        }
 
         public Producto sig
         {
@@ -33,8 +57,8 @@ namespace Control_mediante_listas_enlazadas
 
         public override string ToString()
         {
-            return "Codigo: " + _codigo + "| Nombre: " + _nombre + "| Descripcion: " + _descripcion +
-                    "| Cantidad: " + _cantidad + "| Precio: $" + _costo + "\r\n";
+            return "Codigo: " + Codigo + "| Nombre: " + Nombre + "| Descripcion: " + Descripcion +
+                    "| Cantidad: " + Cantidad + "| Precio: $" + Costo + "\r\n";
         }
     }
 }

@@ -29,5 +29,31 @@ namespace Control_mediante_listas_enlazadas
         {
             txtLista.Text = prod.Listar();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            prod.buscar(Convert.ToInt32(txtCodigo.Text));
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            prod.eliminar(Convert.ToInt32(txtCodigo.Text));
+        }
+
+        private void btnInsertar_Click(object sender, EventArgs e)
+        {
+            Producto nuevo;
+            nuevo = new Producto(Convert.ToInt16(txtCodigo.Text), txtNombre.Text, txtDesc.Text, txtCantidad.Text,
+                txtCosto.Text);
+            prod.Insertar(nuevo, Convert.ToInt16(txtPos.Text));
+        }
+
+        private void btnAgrInicio_Click(object sender, EventArgs e)
+        {
+            Producto nuevo;
+            nuevo = new Producto(Convert.ToInt16(txtCodigo.Text), txtNombre.Text, txtDesc.Text, txtCantidad.Text,
+                txtCosto.Text);
+            prod.agregarInicio(nuevo);
+        }
     }
 }
