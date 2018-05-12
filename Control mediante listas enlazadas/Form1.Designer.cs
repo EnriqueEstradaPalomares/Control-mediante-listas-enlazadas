@@ -222,6 +222,7 @@
             this.btnElimiPrimero.TabIndex = 37;
             this.btnElimiPrimero.Text = "Eliminar Primero";
             this.btnElimiPrimero.UseVisualStyleBackColor = true;
+            this.btnElimiPrimero.Click += new System.EventHandler(this.btnElimiPrimero_Click);
             // 
             // btnElimiUltimo
             // 
@@ -231,6 +232,7 @@
             this.btnElimiUltimo.TabIndex = 38;
             this.btnElimiUltimo.Text = "Eliminar Ultimo";
             this.btnElimiUltimo.UseVisualStyleBackColor = true;
+            this.btnElimiUltimo.Click += new System.EventHandler(this.btnElimiUltimo_Click);
             // 
             // btnReporte
             // 
@@ -240,6 +242,7 @@
             this.btnReporte.TabIndex = 39;
             this.btnReporte.Text = "Reporte Inverso";
             this.btnReporte.UseVisualStyleBackColor = true;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
             // 
             // btnInverVista
             // 
@@ -249,6 +252,7 @@
             this.btnInverVista.TabIndex = 40;
             this.btnInverVista.Text = "Invertir vista";
             this.btnInverVista.UseVisualStyleBackColor = true;
+            this.btnInverVista.Click += new System.EventHandler(this.btnInverVista_Click);
             // 
             // btnInsertar
             // 

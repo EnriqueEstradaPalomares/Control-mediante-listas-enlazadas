@@ -55,5 +55,25 @@ namespace Control_mediante_listas_enlazadas
                 txtCosto.Text);
             prod.agregarInicio(nuevo);
         }
+
+        private void btnElimiUltimo_Click(object sender, EventArgs e)
+        {
+            prod.eliminarUltimo();
+        }
+
+        private void btnElimiPrimero_Click(object sender, EventArgs e)
+        {
+            prod.eliminarPrimero();
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            txtLista.Text = prod.reporteInverso();
+        }
+
+        private void btnInverVista_Click(object sender, EventArgs e)
+        {
+            prod.invertirVista();
+        }
     }
 }

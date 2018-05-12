@@ -126,7 +126,7 @@ namespace Control_mediante_listas_enlazadas
             }
         }
 
-        public void EliminarUltimo(Producto posicion)
+        private void EliminarUltimo(Producto posicion)
         {
             if (posicion.sig.sig == null)
                 posicion.sig = null;
@@ -134,5 +134,59 @@ namespace Control_mediante_listas_enlazadas
                 EliminarUltimo(posicion.sig);
         }
         //----------------------------------------------------------------------------
+        public string reporteInverso()
+        {
+            if (inicio != null)
+            {
+                string data = ReporteInverso(inicio);
+                return data;
+            }
+            else
+                return null;
+        }
+
+        private string ReporteInverso(Producto posicion)
+        {
+            if (posicion.sig != null)
+                return ReporteInverso(posicion.sig) + posicion.ToString();
+            else
+                return posicion.ToString();
+        }
+        //----------------------------------------------------------------------------
+        public void invertirVista()
+        {
+            if (inicio != null)
+            {
+                Producto tempInicio = inicio, ultimo = encontrarUltimo(inicio), temp = inicio;
+                inicio = ultimo;
+                Producto temp3 = inicio;
+                while (temp.sig != ultimo)
+                {
+                    Producto elemento = nuevoUltimo(ultimo, tempInicio);
+                    temp3.sig = elemento;
+                    ultimo = elemento;
+                    temp = tempInicio;
+                    temp3 = temp3.sig;
+                }
+                tempInicio.sig = null;
+                temp3.sig = tempInicio;
+            }
+        }
+
+        private Producto nuevoUltimo(Producto ultimo, Producto posicion)
+        {
+            if (posicion.sig != ultimo)
+                return nuevoUltimo(ultimo, posicion.sig);
+            else
+                return posicion;
+        }
+
+        private Producto encontrarUltimo(Producto posicion)
+        {
+            if (posicion.sig != null)
+                return encontrarUltimo(posicion.sig);
+            else
+                return posicion;
+        }
     }
 }
